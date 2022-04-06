@@ -37,6 +37,20 @@ function p1(da) {
       myList.push(row);
     })
     .on("end", () => {
+      if (myList) {
+        console.log("start");
+        var r;
+        for (var i = 0; i < myList.length; i++) {
+          console.log("end ");
+          if (myList[i].title == "Genial italienisch") {
+            r = i;
+            //  var index = myList.findIndex((x) => x.title === "Genial italienisch");
+           //s console.log("cap ", index);
+          }
+        }
+        console.log("vdghsfgvjhb", myList[r].isbn);
+      }
+
       // console.log(myList);
       // myList.sort();
       //console.log(myList.sort());
@@ -59,7 +73,7 @@ function p1(da) {
       // console.log(str);
       // return myList;
     });
-  console.log(myList);
+  // console.log(myList);
   //  .on("end", () => {
   //    console.log("CSV file successfully processed");
   //  });
